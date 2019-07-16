@@ -9,6 +9,10 @@
    http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config/>
-    <bean id="LinkPredictionService" class="asad.services.LinkPredictionServiceFakeResult"></bean>
+    <bean id="PreProcessService" class="asad.services.PreProcessService"></bean>
+    <bean id="TopicModelingService" class="asad.scheduledServices.TopicModelingService"></bean>
+    <bean id="GraphService" class="asad.scheduledServices.GraphService"></bean>
+    <bean id="StanfordLemmatizer" class="asad.scheduledServices.StanfordLemmatizer"></bean>
+    <bean id="GeneralDao" class="asad.model.dataaccess.dao.GeneralDao"></bean>
 
 </beans>
